@@ -1,0 +1,13 @@
+<table border="2">
+    
+<tr><th>id</th><th>Name</th><th>Java Marks</th><th>Math Marks</th><th>Science marks</th><th>Total Marks</th> <th>Average Marks</th></tr>
+<tr *ngFor="let ob of sarr">
+    <td>{{ob.id}}</td>
+    <td>{{ob.name}}</td>
+    <td>{{ob.jmark}}</td>
+    <td>{{ob.mmark}}</td>
+    <td>{{ob.smark}}</td>
+    <td>{{ob.smark+ob.mmark+ob.jmark}}</td>
+    <td>{{ob.smark+ob.mmark+ob.jmark/3}}</td>
+    </tr>
+</table>
